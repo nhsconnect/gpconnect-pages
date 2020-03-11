@@ -29,11 +29,16 @@ children:
   - title: Clinical scenarios
     url: /accessrecord_clinical_scenarios.html
     output: web, pdf
-  - title: Design decisions
-    url: /accessrecord_design.html
-    output: web, pdf
   - title: Known issues
     url: /accessrecord_known_issues.html
+    output: web, pdf
+    
+
+- title: Design
+  output: web, pdf
+  children:
+  - title: Design decisions
+    url: /accessrecord_design.html
     output: web, pdf
      
 
