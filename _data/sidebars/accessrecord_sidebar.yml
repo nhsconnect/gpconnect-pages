@@ -21,6 +21,11 @@ children:
   - title: Sitemap
     url: /sitemap_access_record_html.html
     output: web 
+  
+
+- title: Business requirements
+  output: web, pdf
+  children:
   - title: Clinical scenarios
     url: /accessrecord_clinical_scenarios.html
     output: web, pdf
@@ -88,4 +93,3 @@ children:
     - title: Administrative items
       url: /accessrecord_view_administrative_items.html
       output: web, pdf
- 
