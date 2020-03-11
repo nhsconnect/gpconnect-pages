@@ -7,17 +7,20 @@
 ## top level property=================
 # entries: [ menuitem ]
 
-title: Access Record HTML1
+title: Access Record HTML
 product: Access Record HTML
 children:
 
-- title: Overview1
+- title: Overview
   output: web, pdf
   children:
   - title: Introduction
     url: /accessrecord.html
     output: web, pdf
     type: homepage
+  - title: Sitemap
+    url: /sitemap_access_record_html.html
+    output: web 
   - title: Clinical scenarios
     url: /accessrecord_clinical_scenarios.html
     output: web, pdf
@@ -27,9 +30,7 @@ children:
   - title: Known issues
     url: /accessrecord_known_issues.html
     output: web, pdf
-  - title: Sitemap
-    url: /sitemap_access_record_html.html
-    output: web      
+     
 
 - title: Development
   output: web, pdf
@@ -88,57 +89,3 @@ children:
       url: /accessrecord_view_administrative_items.html
       output: web, pdf
  
-   
-   
-
-   
-   
-   
-   
-   
-   
-   
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
