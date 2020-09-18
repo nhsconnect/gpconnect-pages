@@ -16,14 +16,6 @@ The headings below list the elements of the MedicationRequest resource and descr
 
 {% include tip.html content="You'll find it helpful to read it in conjunction with the underlying [MedicationRequest profile definition](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1/_history/1.6)" %}
 
-## Overarching principles ##
-
-When populating the MedicationRequest profile it may appear that fields are duplicated in other associated resources. In the interests of minimising redundancy, the 2 following principles **MUST** be applied when populating the MedicationRequest profiles:
-
-1. All mandatory fields **MUST** be populated.
-
-2. Required fields **MUST** always be populated where the data exists in the system apart from where a lexically identical value exists for an equivalent data item in one of the parent profiles. For a MedicationRequest with `intent` of `plan` the associated MedicationStatement would be the parent profile. For a MedicationRequest with `intent` of `order`, the associated MedicationStatement and MedicationRequest with `intent` of `plan` are both considered parent profiles.
-
 ## MedicationRequest elements ##
 
 ### id ###
@@ -125,8 +117,9 @@ The date a repeat prescription authorisation will expire.
 
 Where a medication has been stopped (status == ‘stopped’), the reason is provided in the statusReason extension.
 
-Mandatory for authorisations with stopped status.
+**MUST** be populated for authorisations with stopped status.
 
+This extension **MUST** only be populated where MedicationRequest == 'intent'.
 
 ### extension[statusReason].date ###
 
