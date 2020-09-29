@@ -162,9 +162,11 @@ The textual reason either free text or the term of a code for stopping/discontin
   </tr>
 </table>
 
-If a medication is an acute, acute-handwritten, delayed acute, repeat or repeat dispense.
+If a medication is an acute, delayed acute, repeat or repeat dispense.
 
 This field provides an explicit repeat/acute flag rather than deriving it from presence of extension elements or repeatNumber.
+
+GP Connect no longer supports acute-handwritten. Any handwritten medication records should be returned with the appropriate acute or delayed acute prescription type.
 
 In exceptional cases where for legacy data there is no prescriptionType recorded in the system then this **MUST** be populated with the text ‘No information available’.
 
